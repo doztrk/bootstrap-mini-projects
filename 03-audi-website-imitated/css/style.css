@@ -28,9 +28,14 @@ h6 {
 	font-family: "Audi-ExtNormal", sans-serif;
 }
 
+img {
+	width: 100%;
+	height: auto;
+}
+
 .button {
 	background: none;
-	padding: 20px 40px;
+	padding: 20px 120px;
 	border: none;
 	color: var(--color2);
 }
@@ -56,6 +61,7 @@ h6 {
 	text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1),
 		0 0 40px rgba(255, 255, 255, 1), 0 0 50px rgba(255, 255, 255, 1), 0 0 60px rgba(255, 255, 255, 1), 0 0 70px rgba(255, 255, 255, 1);
 }
+
 /* NAVBAR */
 .main-navbar .offcanvas.offcanvas-top {
 	height: auto;
@@ -159,6 +165,8 @@ h6 {
 	width: 100%;
 	height: 100vh;
 	object-fit: cover;
+	filter: brightness(0.5);
+	-webkit-filter: brightness(0.5);
 }
 .slider .content {
 	width: 100%;
@@ -183,4 +191,63 @@ h6 {
 .slider .content h1 {
 	font-size: 3rem;
 	font-weight: 600;
+}
+
+/* TOPICS */
+.topics {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+.topics h2 {
+	text-align: center;
+	margin-bottom: 50px;
+	font-size: 1.3rem;
+}
+@media (min-width: 768px) {
+	.topics h2 {
+		font-size: 1.7rem;
+	}
+}
+
+.topics .card:hover img {
+	filter: brightness(0.5);
+	-webkit-filter: brightness(0.5);
+	transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-moz-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	-o-transform: scale(1.3);
+}
+
+.topics img {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+.topics .image {
+	overflow: hidden;
+}
+.topics .card {
+	border: none;
+	cursor: pointer;
+}
+.topics .card-subtitle {
+	display: block;
+	margin-bottom: 5px;
+}
+.topics .card-title {
+	font-size: 1.3rem;
+}
+.topics .spec {
+	font-size: 0.7rem;
+	opacity: 0.6;
+}
+
+/* HIGHLIGHT */
+@media (min-width: 576px) {
+	.highlight button {
+		width: auto !important;
+	}
 }
